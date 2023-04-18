@@ -14,13 +14,15 @@ let numObjects = 50,
 let mouseX = 0,
     mouseY = 0
 
-init()
-animate()
+export function create() {
+  init()
+  animate()
+}
 
 function init() {
   
   container = document.createElement('div')
-  document.body.appendChild(container)
+  document.getElementById('app').appendChild(container)
   
   camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 10000)
   camera.position.z = 1000
