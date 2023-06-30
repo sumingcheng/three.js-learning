@@ -8,8 +8,8 @@ const routes = [
     component: () => import('@/views/home/index.vue'),
   },
   {
-    path: '*',
-    name: 'About',
+    path: '/*',
+    name: '404',
     component: () => import('@/views/error/404.vue'),
   },
 ];
