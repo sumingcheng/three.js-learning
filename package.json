@@ -2,21 +2,23 @@
   "name": "three-project",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "mocha --reporter list",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "stats.js": "^0.17.0",
-    "three": "^0.151.3",
-    "vue": "^3.2.47"
+    "three": "^0.154.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
     "less": "^4.1.3",
     "less-loader": "^11.1.0",
-    "vite": "^4.2.0"
+    "mocha": "^10.2.0",
+    "vite": "^4.2.3"
   }
 }
